@@ -1,13 +1,13 @@
 pipeline {
     agent {
         docker {
-            image 'grafana/jmeter-to-k6'
+            image 'kasmweb/postman'
         }
     }
     stages {
         stage('Build') {
             steps {
-                sh 'jmeter --version'
+                sh 'postman --version'
             }
         }
     }

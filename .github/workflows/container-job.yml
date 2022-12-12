@@ -51,3 +51,6 @@ jobs:
     - name: condition with root env var
       if: ${{ env.test == 'value' }}
       run: echo "$test" 
+    - name: check python version
+      run: python
+   
